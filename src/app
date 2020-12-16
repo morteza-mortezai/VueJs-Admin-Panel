@@ -1,0 +1,30 @@
+<template>
+  <v-app>
+    <v-row>
+      <v-col cols="2" class="px-0 py-0"> <rightMenu app/></v-col>
+      <v-col cols="10" class="px-0 py-0">
+        <top-bar app></top-bar>
+        <v-main>
+          <Dash />
+        </v-main>
+      </v-col>
+    </v-row>
+  </v-app>
+</template>
+
+<script>
+import Dash from "./components/Dash";
+import rightMenu from "./components/rightmenu";
+import TopBar from "./components/topBar.vue";
+export default {
+  name: "App",
+
+  components: {
+    Dash,
+    rightMenu,
+    TopBar,
+  },
+
+  data: () => ({}),
+};
+</script>
